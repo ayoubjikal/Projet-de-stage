@@ -22,7 +22,7 @@ import org.jdesktop.animation.timing.Animator;
 import org.jdesktop.animation.timing.Animator;
 import org.jdesktop.animation.timing.TimingTarget;
 import org.jdesktop.animation.timing.TimingTargetAdapter;
-
+    
 public class TextField extends JTextField{
     
     private final Animator  animator;
@@ -36,7 +36,7 @@ public class TextField extends JTextField{
 
     public String getLabelText() {
         return labelText;
-    }
+}
 
     public Color getLineColor() {
         return lineColor;

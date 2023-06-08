@@ -2,7 +2,7 @@
 package GUI.com;
 
 import GUI.com.AdminFrame;
-import GUI.com.StaffFrame;
+import GUI.com.StaffFrame1;
 import GUI.com.TeacherFrame;
 import static java.awt.image.ImageObserver.HEIGHT;
 import javax.swing.JOptionPane;
@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 public class login extends javax.swing.JFrame {
 Connection cn;
         // log in liée a la base de donnée
-    
+        // finally
     public login() {
         initComponents();
         
@@ -37,10 +37,10 @@ Connection cn;
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        txtUserName = new GUI.com.TextField();
-        txtpassword = new com.raven.swing.PasswordField();
         jLabel7 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        txtUserName = new GUI.com.TextField();
+        txtpassword = new GUI.com.PasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -93,13 +93,7 @@ Connection cn;
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, 130, 40));
-
-        txtUserName.setLabelText("User Name");
-        jPanel2.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 210, 60));
-
-        txtpassword.setLabelText("Password");
-        jPanel2.add(txtpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 210, 70));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 130, 40));
 
         jLabel7.setBackground(new java.awt.Color(0, 0, 255));
         jLabel7.setForeground(new java.awt.Color(0, 0, 255));
@@ -109,6 +103,17 @@ Connection cn;
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/password.png"))); // NOI18N
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 40, 40));
+
+        txtUserName.setLabelText("User Name");
+        jPanel2.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 150, 60));
+
+        txtpassword.setLabelText("Password");
+        txtpassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtpasswordActionPerformed(evt);
+            }
+        });
+        jPanel2.add(txtpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, 150, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 410, 440));
 
@@ -139,6 +144,10 @@ Connection cn;
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtpasswordActionPerformed
 
     /**
      * @param args the command line arguments
@@ -192,7 +201,7 @@ Connection cn;
         new AdminFrame().setVisible((true));
       }else if(rs.getString(1).equals("Staff")){
        this.setVisible(false);
-        new StaffFrame().setVisible(true);
+        new StaffFrame1().setVisible(true);
       }else if(rs.getString(1).equals("Teacher")){
       this.setVisible(false);
             new TeacherFrame().setVisible(true);
@@ -217,6 +226,6 @@ Connection cn;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private GUI.com.TextField txtUserName;
-    private com.raven.swing.PasswordField txtpassword;
+    private GUI.com.PasswordField txtpassword;
     // End of variables declaration//GEN-END:variables
 }

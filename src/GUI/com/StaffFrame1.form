@@ -24,12 +24,10 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
               <Component id="jPanel1" min="-2" pref="520" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -131,13 +129,13 @@
                                               <Component id="jScrollPane1" min="-2" pref="241" max="-2" attributes="0"/>
                                               <Component id="txtNomPere" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
                                               <Component id="txtGmail" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
+                                              <Component id="txtCNE" alignment="0" min="-2" pref="189" max="-2" attributes="0"/>
                                               <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                                   <Component id="txtNomEtudiant" max="32767" attributes="0"/>
                                                   <Component id="txtSpecialite" alignment="0" pref="189" max="32767" attributes="0"/>
                                                   <Component id="txtDateN" alignment="0" max="32767" attributes="0"/>
                                                   <Component id="txtNRC" max="32767" attributes="0"/>
                                               </Group>
-                                              <Component id="txtCNE" alignment="0" min="-2" pref="189" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
@@ -433,30 +431,15 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="ImagePath" min="-2" pref="250" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btnBrowseImage" min="-2" max="-2" attributes="0"/>
-                                      <Component id="labelImage" min="-2" pref="269" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                      </Group>
+                      <Component id="ImagePath" min="-2" pref="250" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="textField2" pref="179" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="textField1" pref="170" max="32767" attributes="0"/>
-                                  <Component id="passwordField1" max="32767" attributes="0"/>
-                              </Group>
-                              <Component id="textField3" alignment="0" max="32767" attributes="0"/>
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btnBrowseImage" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelImage" min="-2" pref="269" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -473,14 +456,6 @@
                   <Component id="labelImage" min="-2" pref="201" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnBrowseImage" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="textField2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                  <Component id="textField1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="passwordField1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -505,33 +480,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBrowseImageActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="GUI.com.TextField" name="textField1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="  "/>
-            <Property name="labelText" type="java.lang.String" value="Password"/>
-            <Property name="lineColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="ff" type="rgb"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1ActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="GUI.com.TextField" name="textField2">
-          <Properties>
-            <Property name="labelText" type="java.lang.String" value="User Name"/>
-          </Properties>
-        </Component>
-        <Component class="GUI.com.PasswordField" name="passwordField1">
-          <Properties>
-            <Property name="labelText" type="java.lang.String" value="Password"/>
-          </Properties>
-        </Component>
-        <Component class="GUI.com.TextField" name="textField3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="textField3"/>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
