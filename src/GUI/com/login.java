@@ -13,10 +13,11 @@ public class login extends javax.swing.JFrame {
 Connection cn;
         // log in liée a la base de donnée
         // finally
+        //test test test
     public login() {
         initComponents();
         
-        //jkdkdk
+        
         //txtusername.setBackground(new java.awt.Color(0,0,0,1));
         //txtpassword.setBackground(new java.awt.Color(0,0,0,1));
     }
